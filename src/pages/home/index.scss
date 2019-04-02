@@ -1,0 +1,190 @@
+@import "../../styles/mixin";
+.home-page {
+  @include wh(100%, 100%);
+  background: #102A4D;
+  .white-bg {
+    background: $bg-color-base;
+  }
+  .home-bg {
+    background: #F7F9FC;
+    overflow: hidden;
+  }
+  .section1 {
+    width: 100%;
+    box-sizing: border-box;
+    .item-box {
+      @include wh(750px, 490px);
+      padding: 78px 0 48px;
+      box-sizing: border-box;
+      @include bg('./img/top-bg');
+      background-position: bottom center;
+      .item-content {
+        .item-title {
+          margin-bottom: 132px;
+          text-align: center;
+          height: 166px;
+          .item-p {
+            @include sc(80px, #FDE8A7);
+            font-weight: bold;
+            line-height: 80px;
+            display: block;
+            margin-bottom: 30px;
+            height: 80px;
+          }
+          .item-pp {
+           @include sc(50px, #FDE8A7);
+           display: block;
+           line-height: 80px;
+           margin-bottom: 30px;
+           height: 80px
+          }
+          .item-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .item-h4 {
+            @include sc(26px, #DBD0AD);
+              display: block;
+              line-height: 40px;
+            }
+            .eyes-btn {
+              width: 50px;
+              height: 40px;
+              image {
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+          }
+        }
+        .items-bottom {
+          @include fj();
+          align-items: center;
+          .item-bottom {
+            flex: 1;
+            text-align: center;
+            .item-p1 {
+              @include sc(26px, #DBD0AD);
+              line-height: 26px;
+              display: block;
+            }
+            .item-p2 {
+              @include sc(30px, #FDE8A7);
+              margin-bottom: 20px;
+              line-height: 30px;
+              font-weight: bold;
+              display: block;
+            }
+          }
+        }
+        .line {
+          width: 0;
+          height: 60px;
+          border-left:1px solid #5d676d;
+        }
+      }
+    }
+  }
+  .section2 {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    .title {
+      margin-bottom: 30px;
+      .h4 {
+        display: block;
+        @include sc(34px, #000000);
+        line-height: 34px;
+        height: 34px;
+        position: relative;
+        text-indent: 16px;
+        &::before {
+          position: absolute;
+          top: 4px;
+          left: 0;
+          content: '';
+          width: 6px;
+          height: 34px;
+          background:#102A4D;
+          border-radius: 3px;
+        }
+      }
+    }
+    .content {
+      .content-item {
+        width: 690px;
+        padding: 20px 60px;
+        border-radius: 40px;
+        box-sizing: border-box;
+        @include fj();
+        align-items: center;
+        .item-h {
+          @include sc(36px, #102A4D);
+          font-weight: bold;
+          line-height: 36px;
+          width: 50px;
+          height: 36px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          position: relative;
+          .item-h1 {
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            height: 30px;
+            line-height: 30px;
+          }
+        }
+        .item-p {
+          @include sc(26px, #102A4D);
+          line-height: 36px;
+          display: block;
+        }
+      }
+      .bg1 {
+        background: #fde8a7;
+        margin-bottom: 20px;
+      }
+      .bg2 {
+        background: rgb(178, 211, 254);
+      }
+      .line {
+        width:0px;
+        height:73px;
+        border-left:1px solid rgb(115, 115, 116);
+      }
+    }
+  }
+  .section3 {
+    box-sizing: border-box;
+    padding: 60px 30px;
+    .items-box {
+      @include fj();
+      text-align: center;
+      .item {
+        .img {
+          @include wh(64px, 54px);
+          display: block;
+          margin: 0 auto;
+        }
+        .text {
+          display: block;
+          @include sc(26px, #000000);
+          margin-top: 20px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .section4 {
+    @include wh(750px, 250px);
+    margin: 20px auto;
+    .ad {
+      @include wh(100%, 100%);
+    }
+  }
+}
