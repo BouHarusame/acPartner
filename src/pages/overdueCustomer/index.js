@@ -49,7 +49,7 @@ export default class Overduecustomer extends Component {
         <View className='nav-menu'>
           <View className='nav-menu-title left'>公司名称</View>
           <View className='nav-menu-title center'>逾期天数</View>
-          <View className='nav-menu-title right'>逾期总运费</View>
+          <View className='nav-menu-title right'>逾期总费用</View>
         </View>
         <View className='customer-list-container'>
           {list.length > 0 && (

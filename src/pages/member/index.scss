@@ -2,4 +2,89 @@
 
 .member-page {
   @include wh(100%, 100%);
+  background: #102A4D;
+  .member-page-header {
+    @include wh(100%, 402px);
+    overflow: hidden;
+    @include bg('./img/member-bg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .member-page-avatar {
+      .avatar-img {
+        @include wh(164px, 164px);
+        margin: 0 auto 40px;
+        border-radius: 82px;
+        overflow: hidden;
+      }
+      .avatar-name {
+        text-align: center;
+        @include sc(40px, #FDE8A7);
+        font-weight: 400;
+      }
+    }
+  }
+  .member-page-content {
+    background: #F7F9FC;
+    padding-bottom: 20px;
+    .member-page-items {
+      padding: 0 30px;
+      background: #ffffff;
+    }
+    .navigator-hover {
+      background: #F7F9FC;
+    }
+    .member-item {
+      padding: 56px 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:nth-child(n+2) {
+        position: relative;
+        &:after {
+          display: block;
+          content: '';
+          @include wh(100%, 16px);
+          background: #F7F9FC;
+          border-radius: 8px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      .item-icon {
+        @include wh(30px, 30px);
+        margin-left: 10px;
+      }
+      .icon1 {
+        @include bg('./img/bank-card');
+      }
+      .icon2 {
+        @include bg('./img/truth-name');
+      }
+      .icon3 {
+        @include bg('./img/paihangbang');
+      }
+      .icon4 {
+        @include bg('./img/yao-qing');
+      }
+      .icon5 {
+        @include bg('./img/bangzhu');
+      }
+      .icon6 {
+        @include bg('./img/lianxi');
+      }
+      .item-text {
+        @include sc(30px, #353535);
+        font-weight: 400;
+        margin-left: 20px;
+        flex: 1;
+      }
+      .item-arrow {
+        @include wh(16px, 30px);
+        @include bg('./img/arrow');
+        margin-right: 10px;
+      }
+    }
+  }
 }

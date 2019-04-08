@@ -49,7 +49,7 @@ render() {
         <View className='nav-menu'>
           <View className='nav-menu-title left'>姓名</View>
           <View className='nav-menu-title center'>逾期客户数</View>
-          <View className='nav-menu-title right'>逾期总运费</View>
+          <View className='nav-menu-title right'>逾期总费用</View>
         </View>
         <View className='customer-list-container'>
           {list.length > 0 && (

@@ -39,7 +39,7 @@ class App extends Component {
       navigationBarTextStyle: 'white'
     },
     tabBar: {
-      color: '#B6B6B7',
+      color: '#BAC0C9',
       selectedColor: '#000000',
       backgroundColor: '#ffffff',
       borderStyle: 'black',
